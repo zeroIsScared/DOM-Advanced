@@ -25,23 +25,20 @@ class Element {
         }
     }
 
-    removeChild( child ){
+   removeChild( child ){
       if( child  instanceof Element) {
          
         for(let index = 0; index < this.children.length; index++ ){
-          console.log()
+          
           if(Object.is(this.children[index],child)) {
             this.children.splice(index,1);
-          }    
-          else {
-            console.error('Only objects of type Element can be removed !!!');        
+          } 
         }
-    }
-
+      } 
+      else {
+            console.error('Only objects of type Element can be removed !!!');        
+      }  
   }
-
-}
-}
 }
 
   // let root = new Element("html")
