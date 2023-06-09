@@ -29,7 +29,8 @@ class Element {
       if( child  instanceof Element) {
          
         for(let index = 0; index < this.children.length; index++ ){
-          if(Object.is(this.children[index]),child) {
+          console.log()
+          if(Object.is(this.children[index],child)) {
             this.children.splice(index,1);
           }    
           else {
@@ -39,6 +40,7 @@ class Element {
 
   }
 
+}
 }
 }
 
